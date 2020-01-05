@@ -1,0 +1,16 @@
+<head>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	
+	<%- include('banner',{username:username}) %>
+		
+	<div class="detail">
+		<div class="title"><%= article.title %></div>
+		<div class="desc">
+			<span>作者:<%= article.username %></span>
+			<span>发布时间:<%= article.createTime %></span>
+		</div>
+		<div class="content"><%- article.content %></div>
+	</div>
+</body>
